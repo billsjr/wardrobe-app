@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Wardrobe",
+    "slug": "wardrobe-app",
+    "version": "1.0.0",
+    "scheme": "wardrobe",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.billsjr.wardrobe"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Wardrobe uses your photos so you can add clothes to your closet.",
+          "cameraPermission": "Wardrobe uses the camera so you can photograph your clothes."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
